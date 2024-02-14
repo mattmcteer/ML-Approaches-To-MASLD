@@ -1,7 +1,7 @@
-setwd("~/Documents/University/Year 5/Response Variable Repetition/Modelling /Extended Features METACOHORT DataFrames")
+setwd()
 
 #Response 11 
-df = read.csv('Extended_Response11_METACOHORT.csv')
+df = read.csv(#response 11 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -26,13 +26,13 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response11_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_11,row.names= FALSE) 
 
 
 
 
 #Response 12
-df = read.csv('Extended_Response12_METACOHORT.csv')
+df = read.csv(#response 12 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -57,12 +57,12 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response12_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_12,row.names= FALSE) 
 
 
 
 #Response 13 
-df = read.csv('Extended_Response13_METACOHORT.csv')
+df = read.csv(#response 13 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -87,11 +87,11 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response13_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_13,row.names= FALSE) 
 
 
 #Response 14
-df = read.csv('Extended_Response14_METACOHORT.csv')
+df = read.csv(#response 14 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -116,12 +116,12 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response14_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_14,row.names= FALSE) 
 
 
 
 #Response 15
-df = read.csv('Extended_Response15_METACOHORT.csv')
+df = read.csv(#response 15 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -146,11 +146,11 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response15_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_15,row.names= FALSE) 
 
 
 #Response 16
-df = read.csv('Extended_Response16_METACOHORT.csv')
+df = read.csv(#response 16 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -175,12 +175,12 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response16_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_16,row.names= FALSE) 
 
 
 
 #Response 17
-df = read.csv('Extended_Response17_METACOHORT.csv')
+df = read.csv(#response 17 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -205,11 +205,11 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response17_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_17,row.names= FALSE) 
 
 
 #Response 18
-df = read.csv('Extended_Response18_METACOHORT.csv')
+df = read.csv(#response 18 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -234,12 +234,12 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response18_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_18,row.names= FALSE) 
 
 
 
 #Response 20
-df = read.csv('Extended_Response20_METACOHORT.csv')
+df = read.csv(#response 20 dataset)
 df = subset(df, select = -c(X))
 
 #Convert bool variables to categorical in order for MICE to work
@@ -264,7 +264,7 @@ my_imp = mice(df,m=5,method=c("pmm","logreg","pmm","logreg","logreg",
                               "pmm",""),maxit=10)
 
 df <- complete(my_imp,1)
-write.csv(df, "Extended_Response20_METACOHORT_MICE.csv",row.names= FALSE) 
+write.csv(df, #imputed_extended_response_20,row.names= FALSE) 
 
 
 
